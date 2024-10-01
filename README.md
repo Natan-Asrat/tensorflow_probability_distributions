@@ -2,18 +2,41 @@
 - In this project, I explored how to use TensorFlow Probability (TFP) distributions to work with probabilistic models.
 - You can get the code in [tensorflow_distributions.ipynb](./tensorflow_distributions.ipynb)
 
-## Distributions in TensorFlow Probability
-- Implemented common distributions such as Normal, Bernoulli, and Categorical using TFP.
-- Visualized distribution functions, including probability density functions (PDFs) and cumulative distribution functions (CDFs).
-- Demonstrated how to sample from these distributions and compute log-likelihoods.
+## Basic Distributions
+- Implemented common distributions such as Normal and Exponential using TFP and visualized their properties.
 
-![joint](./screenshots/joint_distribution.png)
+### Normal Distribution:
+- The basic normal distribution and its properties.
 
-## Joint Distributions and Sampling
-- Explored how to model joint distributions using TFP's `JointDistribution` API.
-- Performed sampling and visualization of multiple random variables to analyze their behavior.
+![Normal Distribution](./screenshots/normal.JPG)
 
-![joint_sampling](./screenshots/joint_sampling.png)
+### Exponential Distribution:
+- Visualizing the exponential distribution.
+
+![Exponential Distribution](./screenshots/exponential.JPG)
+
+### Bivariate and Independent Distributions:
+- Explored joint and independent distributions using TFP's `Independent` and `JointDistribution` APIs.
+
+- Visualization of an independent distribution.
+
+![Independent Distribution](./screenshots/independent.JPG)
+
+- A plot of a bivariate normal distribution.
+
+![Bivariate Distribution](./screenshots/bivariate.JPG)
+
+### Multivariate Normal Distribution:
+- Demonstrated the multivariate normal distribution with a diagonal covariance matrix.
+
+![Normal Diagonal](./screenshots/normal_diag.JPG)
+
+### Loss Function:
+- Implemented a loss function based on distribution log-likelihood for training.
+
+- The loss curve during training.
+
+![Loss](./screenshots/loss.JPG)
 
 ## Setup
 - Create virtual environment: `python -m venv venv`
